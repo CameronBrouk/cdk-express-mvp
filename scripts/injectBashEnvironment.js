@@ -1,4 +1,4 @@
-const fs = require('fs')
+import fs from 'fs'
 
 const injectBashEnvironment = (env) => {
   const variablesList = Object.entries(env).map(
