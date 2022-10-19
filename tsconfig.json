@@ -34,7 +34,6 @@
   },
   "include": ["src"],
   "exclude": [
-    "scripts",
     "src/**/*.spec.ts",
     "node_modules",
     "dist",

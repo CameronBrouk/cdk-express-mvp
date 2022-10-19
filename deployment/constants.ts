@@ -17,7 +17,7 @@ export const DEVELOPERS: DeveloperMap = {
   },
 }
 
-export const GIT_COMMIT_HASH = 'latest-3'
+export const GIT_COMMIT_HASH = 'c4cf7ab'
 
 export const GLOBAL_SSH_KEY_NAME = 'test-ec2-ssh'
 
