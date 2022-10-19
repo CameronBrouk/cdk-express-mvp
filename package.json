@@ -11,7 +11,7 @@
     "prod:docker:deploy": "",
     "ecr:login": "aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 941447230352.dkr.ecr.us-east-2.amazonaws.com",
     "ecr:build": "docker build -t swing-repo .",
-    "ecr:tag": "docker tag swing-repo 941447230352.dkr.ecr.us-east-2.amazonaws.com/swing-repo:$(git rev-parse --short HEAD)",
+    "ecr:tag": "docker tag swing-repo:latest 941447230352.dkr.ecr.us-east-2.amazonaws.com/swing-repo:$(git rev-parse --short HEAD)",
     "ecr:push": "docker push 941447230352.dkr.ecr.us-east-2.amazonaws.com/swing-repo:latest",
     "ecr:deploy": "git add . && git commit -m 'DEPLOY' && npm run ecr:login && npm run ecr:build && npm run ecr:tag && npm run ecr:push"
   },
