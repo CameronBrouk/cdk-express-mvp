@@ -22,7 +22,7 @@ import { HostedZone } from 'aws-cdk-lib/aws-route53'
 import { Construct } from 'constructs'
 import { GLOBAL_SSH_KEY_NAME } from '../../constants'
 import { InstanceTypeIdentifier } from '../../types/instance-types'
-import { DomainInfo } from '../../__services/domains/aws-services/route-53'
+import { DomainInfo } from '../domains/route-53'
 
 type Props = {
   vpc: Vpc

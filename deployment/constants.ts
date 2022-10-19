@@ -1,4 +1,4 @@
-import { Ipv4Address } from './__services/network-security/aws-services/security-group'
+import { Ipv4Address } from './services/network-security/security-group'
 import { ManagedPolicyString } from './types/managed-policy-string'
 
 type DeveloperMap = Record<

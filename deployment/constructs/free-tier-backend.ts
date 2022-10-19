@@ -8,22 +8,17 @@ import {
   getDbName,
   getDbSecretJson,
   getDbSecrets,
-} from '../__services/database/relational-database-service'
-import { createDockerRepo } from '../__services/docker/aws-services/elastic-container-registry'
-import { createTaskDefinition } from '../__services/docker/aws-services/task-definition'
+} from '../services/database/relational-database-service'
+import { createDockerRepo } from '../services/docker/elastic-container-registry'
+import { createTaskDefinition } from '../services/docker/task-definition'
 import {
   createCertificate,
   generateSslCertificate,
-} from '../_services/domains/certificate-manager'
-import {
-  getApiDomain,
-  getDomains,
-} from '../__services/domains/aws-services/route-53'
-import { logCloudWatch } from '../_services/logging/cloudwatch'
-import { createSecurityGroup } from '../__services/network-security/aws-services/security-group'
-import { createVpc } from '../_services/network-security/virtual-private-cloud'
-import { createRole } from '../__services/resource-permissions/aws-resources/identity-access-management'
-import { createEcsService } from '../__services/server/aws-services/elastic-container-service/ecs-managed'
+} from '../services/domains/certificate-manager'
+import { getDomains } from '../services/domains/route-53'
+import { logCloudWatch } from '../services/logging/cloudwatch'
+import { createVpc } from '../services/network-security/virtual-private-cloud'
+import { createEcsService } from '../services/server/ecs-managed'
 
 type Props = {
   title: string
