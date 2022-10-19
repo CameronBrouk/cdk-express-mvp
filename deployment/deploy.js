@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const cdk = require("aws-cdk-lib");
+const Unimpaired_1 = require("./stacks/Unimpaired");
+const app = new cdk.App();
+new Unimpaired_1.UnimpairedStack(app, 'Dev');
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZGVwbG95LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiZGVwbG95LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUNBLG1DQUFrQztBQUVsQyxvREFBcUQ7QUFFckQsTUFBTSxHQUFHLEdBQUcsSUFBSSxHQUFHLENBQUMsR0FBRyxFQUFFLENBQUE7QUFFekIsSUFBSSw0QkFBZSxDQUFDLEdBQUcsRUFBRSxLQUFLLENBQUMsQ0FBQSIsInNvdXJjZXNDb250ZW50IjpbIiMhL3Vzci9iaW4vZW52IG5vZGVcbmltcG9ydCAqIGFzIGNkayBmcm9tICdhd3MtY2RrLWxpYidcbmltcG9ydCB7IEZyZWVUaWVyQmFja2VuZCB9IGZyb20gJy4vY29uc3RydWN0cy9mcmVlLXRpZXItYmFja2VuZCdcbmltcG9ydCB7IFVuaW1wYWlyZWRTdGFjayB9IGZyb20gJy4vc3RhY2tzL1VuaW1wYWlyZWQnXG5cbmNvbnN0IGFwcCA9IG5ldyBjZGsuQXBwKClcblxubmV3IFVuaW1wYWlyZWRTdGFjayhhcHAsICdEZXYnKVxuIl19

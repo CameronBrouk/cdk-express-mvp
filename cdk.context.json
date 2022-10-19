@@ -1,0 +1,45 @@
+{
+  "vpc-provider:account=941447230352:filter.isDefault=true:region=us-east-2:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-08b1fa362f6c8c907",
+    "vpcCidrBlock": "172.31.0.0/16",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-0f94257199c244ed6",
+            "cidr": "172.31.0.0/20",
+            "availabilityZone": "us-east-2a",
+            "routeTableId": "rtb-008bb0da5e7d19d90"
+          },
+          {
+            "subnetId": "subnet-0f7d6d9b5a8def629",
+            "cidr": "172.31.16.0/20",
+            "availabilityZone": "us-east-2b",
+            "routeTableId": "rtb-008bb0da5e7d19d90"
+          },
+          {
+            "subnetId": "subnet-0f18908b78b55132c",
+            "cidr": "172.31.32.0/20",
+            "availabilityZone": "us-east-2c",
+            "routeTableId": "rtb-008bb0da5e7d19d90"
+          }
+        ]
+      }
+    ]
+  },
+  "availability-zones:account=941447230352:region=us-east-2": [
+    "us-east-2a",
+    "us-east-2b",
+    "us-east-2c"
+  ],
+  "availability-zones:account=941447230352:region=us-west-2": [
+    "us-west-2a",
+    "us-west-2b",
+    "us-west-2c",
+    "us-west-2d"
+  ],
+  "ami:account=941447230352:filters.image-type.0=machine:filters.name.0=fck-nat-amzn2-*-arm64-ebs:filters.state.0=available:owners.0=568608671756:region=us-west-2": "ami-005e79c34846da0a4"
+}
